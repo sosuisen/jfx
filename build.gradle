@@ -4376,6 +4376,7 @@ allprojects {
 
         compile.options.compilerArgs += ["-XDignore.symbol.file", "-encoding", "UTF-8"]
         compile.options.compilerArgs += [ "-Xmaxerrs", "1000" ]
+	compile.options.compilerArgs += [ "-parameters" ]
 
         // we use a custom javadoc command
         project.javadoc.enabled = false
