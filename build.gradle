@@ -3885,7 +3885,8 @@ allprojects {
         compile.options.warnings = IS_LINT
 
         compile.options.compilerArgs += ["-XDignore.symbol.file", "-encoding", "UTF-8"]
-
+        compile.options.compilerArgs += [ "-parameters" ]
+        
         // we use a custom javadoc command
         project.javadoc.enabled = false
 
